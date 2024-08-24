@@ -41,7 +41,7 @@ async function getCodeSnippet(prompt: string): Promise<string> {
                 // stop: [""]
             }, {
                 headers: {
-                    'Authorization': `Bearer 60a54901fb28276d68ec60ffa896a5c11ec513b59ad4e4edb0093d6ded52e31e`, // Replace with your actual API key
+                    'Authorization': `Bearer 60a54901fb28276dc513b5952e31e`, // Replace with your actual API key
                     'Content-Type': 'application/json'
                 }
             }),
