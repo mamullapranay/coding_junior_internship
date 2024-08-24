@@ -72,5 +72,5 @@ License
 This project is licensed under the MIT License.
 
 Contact
-For issues or inquiries, please contact your-vsurajk7@gmail.com
+For issues or inquiries, please contact bt21cse079@iiitn.ac.in
 
