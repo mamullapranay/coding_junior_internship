@@ -1,0 +1,62 @@
+{
+  "name": "codesuggestion",
+  "displayName": "CodeSuggestion",
+  "author": "V Suraj",
+  "description": "A VS Code extension for enhanced code suggestions using AI.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.openChat",
+    "onCommand:extension.sendSelectedCode"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.openChat",
+        "title": "mycopilot"
+      },
+      {
+        "command": "extension.sendSelectedCode",
+        "title": "Send Selected Code"
+      }
+    ]
+  },
+  "models": [
+    {
+      "title": "Llama 3.1 8B",
+      "provider": "together",
+      "model": "llama3.1-405b",
+      "apiKey": "<60a54901fb28276d68ec60ffa896a5c11ec513b59ad4e4edb0093d6ded52e31e>"
+    }
+  ],
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^29.5.12",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.92.0",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.3"
+  }
+}
