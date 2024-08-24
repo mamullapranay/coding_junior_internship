@@ -14,7 +14,7 @@ Clone the Repository
 
 bash
 Copy code
-git clone https://github.com/vsuraj08/CodingJr-copilot.git
+git clone 
 Navigate to the Project Directory
 
 bash
